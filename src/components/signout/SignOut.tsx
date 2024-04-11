@@ -1,4 +1,4 @@
-import { auth } from "../firebase/firebase";
+import { auth } from "../../firebase/firebase";
 
 const SignOut = () => {
   const singOut = async () => {
@@ -10,7 +10,10 @@ const SignOut = () => {
   };
 
   return (
-    <button onClick={singOut} className="text-3xl bg-slate-700 p-2">
+    <button
+      onClick={singOut}
+      className="text-3xl text-white rounded-md bg-slate-700 p-2"
+    >
       SignOut
     </button>
   );
